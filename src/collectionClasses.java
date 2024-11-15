@@ -9,7 +9,8 @@ public class collectionClasses {
         Stack<Integer> paperStack = new Stack<>();
 
         //paperstack input
-        System.out.println("Enter 10 document IDs to be digitized (scanned):");
+        System.out.println("================================================");
+        System.out.println("Enter 10 document IDs to be digitized (scanned)");
         for (int i = 1; i <= 10; i++) {
             System.out.print("Enter document no " + i + ": ");
             int documentNo = scanner.nextInt();
@@ -38,12 +39,13 @@ public class collectionClasses {
         }
 
         //displaying the verification queue
-        System.out.println("\nAll documents in the verification queue:");
+        System.out.println("================================================");
+        System.out.println("All documents in the verification queue:");
         while (!verificationQueue.isEmpty()) {
             System.out.println("Document ID: " + verificationQueue.poll());
         }
-
-        System.out.println("\nAll documents have been digitized and verified.\n");
+        System.out.println("================================================");
+        System.out.println("All documents have been digitized and verified. Thank you!\n");
         scanner.close();
     }
 }
